@@ -1,5 +1,5 @@
-@import "/popup.css";
-@import "/button.css";
+@import "popup.css";
+@import "button.css";
 
 body {
   width: 100%;
