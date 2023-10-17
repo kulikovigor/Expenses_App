@@ -1,0 +1,112 @@
+@import "/popup.css";
+@import "/button.css";
+
+body {
+  width: 100%;
+  padding-left: 240px;
+  padding-top: 67px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 700;
+}
+
+ol {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+p {
+  font-weight: 700;
+}
+
+span {
+  font-weight: lighter;
+}
+
+select, option {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 2px;
+  background: #f0f6fb;
+}
+
+.expenses {
+  margin-top: 28px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 28px;
+  row-gap: 43px;
+}
+
+.expenses_input {
+  width: 484px;
+}
+
+.money_input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 17px 9px 22px;
+  border: 1px solid #000;
+}
+
+.money_input__input {
+  width: 100%;
+  border: none;
+  font-size: inherit;
+
+}
+
+.money_input__input:focus-visible {
+  outline: none;
+}
+
+.category_select {
+  margin-top: 18px;
+  width: 484px;
+  height: 58px;
+  padding-left: 22px;
+  border: 1px solid #000;
+}
+
+.rub::after {
+  content: " руб.";
+}
+
+.stat,
+.history {
+  width: 484px;
+}
+
+.stat_sum {
+  margin-top: 13px;
+}
+.stat_status {
+  margin-top: 35px;
+}
+
+.status {
+  color: green;
+}
+
+.status_red {
+  color: red;
+}
+
+.history_title {
+  font-weight: 700;
+  margin-bottom: 13px;
+}

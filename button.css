@@ -1,0 +1,37 @@
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+
+.add_button {
+  display: block;
+  padding: 10px 110px;
+  height: 58px;
+  font-size: inherit;
+  color: #fff;
+  background-color: #0094ff;
+  border-radius: 15px;
+  border: none;
+}
+
+.reset-button {
+  display: block;
+  padding: 11px 82px;
+  font-size: inherit;
+  color: #fff;
+  background-color: #ff0000;
+  border-radius: 15px;
+  border: none;
+}
+
+.stat_change_limit_btn {
+    margin-left: 12px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+}
