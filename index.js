@@ -5,6 +5,7 @@ const STATUS_OUT_OF_LIMIT = 'все плохо';
 const STATUS_OUT_OF_LIMIT_CLASSNAME = 'status_red';
 const STORAGE_LABEL_LIMIT = 'limit';
 const STORAGE_LABEL_EXPENSES = 'expenses';
+const STORAGE_LABEL_STATUS = "status";
 
 const inputNode = document.querySelector('.js-input');
 const categorySelectNode = document.querySelector('.js-category_select');
@@ -127,6 +128,7 @@ function renderStatus() {
         statusNode.innerText = `${STATUS_OUT_OF_LIMIT} (${LIMIT - total}) ${CURRENCY}`;
         statusNode.classList.add(STATUS_OUT_OF_LIMIT_CLASSNAME);
     }
+    localStorage.setItem(STORAGE_LABEL_STATUS, statusNode.innerText);
 }
 
 function changeLimitHandler() {
@@ -143,6 +145,7 @@ function changeLimitHandler() {
     LIMIT = newLimitValue;
     localStorage.setItem(STORAGE_LABEL_LIMIT, newLimitValue);
 
+    togglePopup();
     render();
 }
 
