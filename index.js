@@ -41,8 +41,14 @@ render();
 init(expenses);
 
 function init(expenses) {
-    limitNode.innerText = LIMIT;
-    statusNode.innerText = STATUS_IN_LIMIT;
+   limitNode.innerText = LIMIT;
+   const statusFromStorage = localStorage.getItem(STORAGE_LABEL_STATUS);
+
+    if(statusFromStorage) {
+        statusNode.innerText = statusFromStorage;
+    } else {
+        statusNode.innerText = STATUS_IN_LIMIT;
+    }
 };
 
 addBtnNode.addEventListener('click', function(){
